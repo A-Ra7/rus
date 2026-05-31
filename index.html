@@ -474,12 +474,6 @@
 
         /* МОБИЛЬНАЯ АДАПТАЦИЯ */
         @media (max-width: 768px) {
-            .hero-grid {
-                padding-top: 45px;
-            }
-            .container {
-                padding: 0 16px;
-            }
             .nav-flex {
                 flex-direction: column;
                 gap: 10px;
@@ -495,6 +489,10 @@
                 font-size: 0.75rem;
             }
 
+            .hero {
+                padding: 0 0 60px;
+            }
+
             .hero-text {
                 width: 90%;
             }
@@ -506,6 +504,7 @@
                 font-size: 0.85rem;
             }
             .hero-grid {
+                padding-top: 45px;
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
@@ -565,6 +564,10 @@
         }
 
         @media (max-width: 480px) {
+            .hero {
+                padding: 0 0 60px;
+            }
+            
             .hero-grid {
                 padding-top: 45px;
             }
@@ -580,10 +583,6 @@
             }
             .nav-links a {
                 font-size: 0.7rem;
-            }
-            .btn-primary, .btn-outline {
-                padding: 6px 16px;
-                font-size: 0.75rem;
             }
             .card-content, .city-info {
                 padding: 12px;
@@ -670,7 +669,11 @@
             <div class="cards-grid">
                 <div class="region-card" data-img="img/nvkz.jpg" data-name="Новокузнецк">
                     <div class="img-wrapper"><img class="card-img-fixed" src="img/nvkz.jpg" alt="Новокузнецк" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Новокузнецк'"></div>
-                    <div class="card-content"><h3>Новокузнецк</h3><p>Стальное сердце Сибири», которое бьется в такт тысячам станков, кует каркас страны, а свою усталость прячет за дымкой угольной пыли и человеческой гордостью за труд.</p><span class="tag">Сибирь</span> <span class="tag">Промышленность</span> <span class="tag">Культура</span> <span class="tag">Архитектура</span></div>
+                    <div class="card-content"><h3>Новокузнецк</h3><p>«Стальное сердце Сибири», которое бьется в такт тысячам станков, кует каркас страны, а свою усталость прячет за дымкой угольной пыли и человеческой гордостью за труд.</p><span class="tag">Сибирь</span> <span class="tag">Промышленность</span> <span class="tag">Культура</span> <span class="tag">Архитектура</span></div>
+                </div>
+                <div class="region-card" data-img="img/msc.jpg" data-name="Алтай">
+                    <div class="img-wrapper"><img class="card-img-fixed" src="img/altai.jpg" alt="Алтай" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Москва'"></div>
+                    <div class="card-content"><h3>Золотые горы Алтай</h3><p>Это место силы, где реки текут вспять, а ветер шепчет не на одном, а на сотне древних языков, понятных только камням и орлам.</p><span class="tag">Природа</span> <span class="tag">Горы</span></div>
                 </div>
                 <div class="region-card" data-img="img/baikal.jpg" data-name="Озеро Байкал">
                     <div class="img-wrapper"><img class="card-img-fixed" src="img/baikal.jpg" alt="Байкал" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Байкал'"></div>
@@ -679,10 +682,6 @@
                 <div class="region-card" data-img="img/kavkaz.jpg" data-name="Кавказ">
                     <div class="img-wrapper"><img class="card-img-fixed" src="img/kavkaz.jpg" alt="Кавказ" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Кавказ'"></div>
                     <div class="card-content"><h3>Кавказ</h3><p>Горный перешеек между Чёрным и Каспийским морями, где Европа встречается с Азией. Это край суровых, величественных гор (Эльбрус — высочайшая вершина Европы), быстрых рек и плодородных долин.</p><span class="tag">Горы</span> <span class="tag">Природа</span></div>
-                </div>
-                <div class="region-card" data-img="img/msc.jpg" data-name="Алтай">
-                    <div class="img-wrapper"><img class="card-img-fixed" src="img/altai.jpg" alt="Алтай" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Москва'"></div>
-                    <div class="card-content"><h3>Золотые горы Алтай</h3><p>Это место силы, где реки текут вспять, а ветер шепчет не на одном, а на сотне древних языков, понятных только камням и орлам.</p><span class="tag">Природа</span> <span class="tag">Горы</span></div>
                 </div>
                 <div class="region-card" data-img="img/msc.jpg" data-name="Кижи">
                     <div class="img-wrapper"><img class="card-img-fixed" src="img/kizi.jpg" alt="Кижи" onerror="this.src='https://placehold.co/600x400/e0d5c0/5a3e2b?text=Москва'"></div>
@@ -727,7 +726,7 @@
                     <img src="img/kalina.jpg" alt="Калининград" onerror="this.src='https://placehold.co/400x300/e0d5c0/5a3e2b?text=Калининград'"><div class="city-info"><h4>Калининград</h4><p>Янтарный край</p></div>
                 </div>
                 <div class="city-card" data-img="img/pskov.jpg" data-name="Псков">
-                    <img src="img/pskov.jpg" alt="Псков" onerror="this.src='https://placehold.co/400x300/e0d5c0/5a3e2b?text=Калининград'"><div class="city-info"><h4>Псков</h4><p>Древний город, Псковский кремль, Троицкий собор</p></div>
+                    <img src="img/pskov.png" alt="Псков" onerror="this.src='https://placehold.co/400x300/e0d5c0/5a3e2b?text=Калининград'"><div class="city-info"><h4>Псков</h4><p>Древний город, Псковский кремль, Троицкий собор</p></div>
                 </div>
                  <div class="city-card" data-img="img/rost.jpg" data-name="Ростов Великий">
                     <img src="img/rost.jpg" alt="Ростов Великий" onerror="this.src='https://placehold.co/400x300/e0d5c0/5a3e2b?text=Калининград'"><div class="city-info"><h4>Ростов Великий</h4><p>Жемчужина Золотого кольца, Ростовский кремль, звоны колоколов</p></div>
@@ -755,7 +754,7 @@
                 <div class="fact-item"><div class="fact-number">25%</div><p>мировых лесов</p><small>зеленые легкие</small></div>
                 <div class="fact-item"><div class="fact-number">№1</div><p>запасы пресной воды</p><small>озеро Байкал</small></div>
             </div>
-            <div class="quote-block"><p>“Умом Россию не понять, Аршином общим не измерить...”</p><div class="quote-author">— Фёдор Тютчев</div></div>
+            <div class="quote-block"><p>“Умом Россию не понять, Аршином общим не измерить: У ней особенная стать - В Россию можно только верить.”</p><div class="quote-author">— Фёдор Тютчев</div></div>
         </div>
     </section>
 </main>
